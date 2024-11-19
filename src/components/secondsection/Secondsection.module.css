@@ -1,0 +1,108 @@
+.secondSection {
+  padding: 50px 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #7a75ff;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.collections {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.collection {
+  flex: 1;
+  margin: 0 10px;
+  position: relative;
+}
+
+.image {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.overlay h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    margin-bottom: 30px;
+  }
+
+  .collections {
+    flex-direction: column;
+  }
+
+  .collection {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .overlay p {
+    font-size: 0.8rem;
+  }
+}

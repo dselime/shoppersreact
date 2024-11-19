@@ -1,0 +1,107 @@
+.firstSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #a8edea; 
+  background-image: url("./images/hero_1.jpg"); 
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: left center; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left; 
+}
+
+.textWrapper {
+  max-width: 500px;
+  margin-left: 700px; 
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: #7a75ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #5e55cc;
+}
+
+@media (max-width: 1024px) {
+  
+  .textWrapper {
+    margin-left: 400px;
+  }
+
+  .title {
+    font-size: 2.5rem; 
+  }
+
+  .description {
+    font-size: 0.95rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .textWrapper {
+    margin-left: 200px; 
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+
+  .textWrapper {
+    margin-left: 50px; 
+    text-align: left;
+  }
+
+  .title {
+    font-size: 1.5rem; 
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
