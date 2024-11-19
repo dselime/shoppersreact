@@ -1,0 +1,168 @@
+.section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+  }
+  
+
+  .services {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+  
+  .serviceItem {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .icon {
+    font-size: 40px;
+    color: #8463e8;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+ 
+  .collections {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  .collectionItem {
+    position: relative;
+    width: 350px;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: 350px;
+  }
+  
+  .image {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .collectionItem:hover .image {
+    transform: scale(1.05);
+  }
+  
+  .textOverlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    box-sizing: border-box;
+  }
+  
+  .textOverlay h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ddd;
+    text-align: left;
+  }
+  
+  .textOverlay h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+
+  @media (max-width: 768px) {
+    .services {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .serviceItem {
+      max-width: 100%; 
+      margin-bottom: 20px;
+    }
+  
+    .collections {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .collectionItem {
+      width: 100%; 
+      max-width: 100%;
+    }
+  
+    .image {
+      height: 300px; 
+    }
+  
+    .textOverlay h2 {
+      font-size: 1.5rem; 
+    }
+  }
+  
+ 
+  @media (max-width: 1024px) {
+    .services {
+      justify-content: center; 
+      gap: 30px;
+    }
+  
+    .collections {
+      gap: 20px; 
+    }
+  
+    .collectionItem {
+      flex: 1 1 calc(50% - 20px); 
+    }
+  
+    .image {
+      height: 400px; 
+    }
+  
+    .textOverlay h2 {
+      font-size: 1.6rem; 
+    }
+  }
+  
+ 
+  @media (min-width: 1025px) {
+    .services {
+      justify-content: space-around;
+    }
+  
+    .collections {
+      justify-content: space-around;
+    }
+  
+    .collectionItem {
+      flex: 1 1 calc(33.333% - 20px); 
+    }
+  
+    .image {
+      height: 450px; 
+    }
+  
+    .textOverlay h2 {
+      font-size: 1.7rem; 
+    }
+  }
+  
